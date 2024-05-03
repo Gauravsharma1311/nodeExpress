@@ -14,9 +14,11 @@ main().catch((err) => console.log(err));
 
 async function main() {
   await mongoose.connect(process.env.MONGO_URL);
-  console.log("database connected ");
+  console.log("database connected");
 }
+//Schema
 
+//bodyParser
 server.use(cors());
 server.use(express.json());
 server.use(morgan("default"));
@@ -28,5 +30,5 @@ server.use("*", (req, res) => {
 });
 
 server.listen(process.env.PORT, () => {
-  console.log("Server Started");
+  console.log("server started");
 });

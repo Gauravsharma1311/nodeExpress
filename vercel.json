@@ -19,7 +19,7 @@
       "dest": "index.js"
     },
     {
-      "src": "/add ",
+      "src": "/add",
       "dest": "build/index.html"
     },
     {

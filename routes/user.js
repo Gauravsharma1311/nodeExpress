@@ -5,10 +5,10 @@ const router = express.Router();
 
 router
   .post("/", userController.createUser)
-  .get("/", userController.allUsers)
+  .get("/", userController.getAllUsers)
   .get("/:id", userController.getUser)
-  .put("/:id", userController.updateUser)
-  .patch("/:id", userController.replaceUser)
+  .put("/:id", userController.replaceUser)
+  .patch("/:id", userController.updateUser)
   .delete("/:id", userController.deleteUser);
 
 exports.router = router;
